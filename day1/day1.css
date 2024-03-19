@@ -23,6 +23,31 @@ main {
     background-color: orange;
 }
 .right {
+ 
+        display: grid;
+       grid-template-columns: 3fr 7fr;
+        gap:10px;
+}
+.box1{
     height: 300px;
+    
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+.box2{
     background-color: chartreuse;
 }
+.box11{
+   
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+.box3{
+    background-color: brown;
+}
+
+
+
+
