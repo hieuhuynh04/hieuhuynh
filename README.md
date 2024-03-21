@@ -10,4 +10,13 @@
   - git add . ( thêm tất cả thây đổi )
   - git commit -m "thanh" (đóng gói thay đổi)
   - git pull ( lấy về thay đổi của người khác ở github dự án)
-  - git push ( update thay đổi của mình lên github)
+  - git push ( update thay đổi của mình lên github)_
+  
+
+ bài 24: flexbox  FROGGY
+flex-flow: column-reverse wrap-reverse;
+align-content: space-between;
+justify-content: center;
+
+
+
