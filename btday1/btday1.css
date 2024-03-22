@@ -1,32 +1,36 @@
-.khung{
- 
+.khung {
+
     width: 1440px;
-   
-margin: auto;
+    margin: auto;
 }
-header{
+
+header {
     display: flex;
     justify-content: space-between;
     border-bottom: 2px solid bisque;
     align-items: center;
     /* background-color: aqua; */
 }
-header .box2{
+
+header .box2 {
     display: flex;
-   
+
 }
-h4{
+
+h4 {
     padding: 10px;
 }
-main{
+
+main {
     /* background-color: bisque; */
     height: 2000px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
 }
-.main1{
+
+.main1 {
     /* background-color: blue; */
     display: flex;
     flex-direction: column;
@@ -35,52 +39,60 @@ main{
     margin-right: 500px;
     text-align: center;
 }
-.main1 img{
+
+.main1 img {
     margin-top: 30px;
     height: 300px;
     width: 350px;
 }
-.box5{
- margin-left: 50px;
- margin-right: 50px;
+
+.box5 {
+    margin-left: 50px;
+    margin-right: 50px;
     border: 2px solid red;
 }
-.main2{
+
+.main2 {
     height: 500px;
     display: grid;
     grid-template-columns: 5fr 5fr;
-    gap:10px;
+    gap: 10px;
 }
-.trai{
-    display:grid;
+
+.trai {
+    display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 10px;
 }
 
-.phai{
-   
+.phai {
+
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 10px;
 }
-.main2 p{
+
+.main2 p {
     display: flex;
     text-align: center;
 
 }
-.boxx{
+
+.boxx {
     width: 150px;
 }
-.boxxx{
+
+.boxxx {
     width: 150px;
 }
 
 
-img{
+img {
     width: 150px;
     height: 100px;
 }
-.box100{
+
+.box100 {
     height: 200px;
     background-color: black;
 }
