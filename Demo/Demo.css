@@ -2,12 +2,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-body {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 li {
     list-style: none;
 }
@@ -15,19 +9,74 @@ img {
     width: 100%;
     height: 100%;
 }
-form {
-    width: 40%;
-    height: 80%;
-    background-color: antiquewhite;
-    padding: 40px;
-    input{
-        width: 100%;
-        margin-top: 10px;
-        padding: 10px;
-        margin-bottom: 10px;
-    }
-    select {
-        width: 100%;
-        padding: 10px;
-    }
+nav {
+    height: 5vh;
+    background-color: blue;
+}
+.container {
+    display: grid;
+    height: 95vh;
+}
+.header {
+    background-color:aqua;
+    grid-area: h;
+}
+.feature1 {
+    background-color: yellowgreen;
+    grid-area: f1;
+}
+.feature2 {
+    background-color: violet;
+    grid-area: f2;
+}
+.feature3 {
+    background-color: red;
+    grid-area: f3;
+}
+.signup {
+background-color:dodgerblue;
+grid-area: s;
+}
+.content {
+    background-color: chartreuse;
+    grid-area: c;
+}
+
+  /* screen laptop */
+@media screen and (min-width:1025px) {
+   .container {
+      grid-template-areas: 
+      "h h h"
+      "f1 f2 f3"
+      "s s s"
+      "c c c"  
+      ;
+   }
+}
+
+/* screen tablet */
+@media screen and (min-width:741px) and (max-width:1024px){
+   .container {
+     grid-template-areas: 
+     "h h"
+     "c c"
+     "c c"
+     "s f1"
+     "f2 f3"
+     ;
+   }
+}
+
+/* screen mobile */
+@media screen and (max-width:740px) {
+   .container {
+    grid-template-areas:
+    "h"
+    "c"
+    "s"
+    "f1"
+    "f2"
+    "f3"
+    ;
+   }
 }
