@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+header {
+    background-image: url(https://s3-alpha-sig.figma.com/img/46a0/d217/c2bd7d5ef2cfc0e9c3123a65be598575?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=P17WyEwCn8OR6DRj4Ur-Fxp8bHJUYcVFi4wJWV8M3miu1UYGZD0Yp2QqVTDN8zGLjdXVeQO72VjUzbFau6oRtXatcvEilDZ1lxTQ9YgdsN0hLajSoGCMU8a9IHSJoA-Soh36pphEnXWSMPLH3n5YHU6rC4vr-w7dSRzlCWBy~0~tIrKctEiQ7SaPq9kLwU4QxBPxx3p0ZZuAT5AICzlO1IYALvLSitO~FNwy5qPn-DEQ7OcUmcIBDUKxe0w7PQFLeH0hT8S9ejOKjgehD43ty6SlEJd0LxIPqddVVNt2El4pKjxtyw9fOEtsqvYqPxyGIOIH3g2Gf9gIo4FQfdzl0g__);
+    background-repeat: no-repeat;
+    background-size: 100% 90%;
+    nav {
+        display: flex;
+        justify-content: space-between;
+        .menu {
+            display: flex;
+        }
+    }
+    h1 {
+        text-align: center;
+        margin-top: 50px;
+        color: white;
+    }
+    .sea {
+        width: 50%;
+        margin: 0 auto;
+        height: 400px;
+        margin-top: 50px;
+    }
+}
