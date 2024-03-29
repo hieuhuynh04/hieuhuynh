@@ -1,0 +1,20 @@
+.admin {
+    background-color: aliceblue;
+    border-radius: 10px;
+    .box {
+        background-color: white;
+        border-radius: 10px;
+        padding: 10px;
+        .icon-user{
+            text-align: center;
+            margin-top: 30px;
+            i {
+                font-size: 30px;
+                color: chartreuse;
+            }
+        }
+        h1 {
+            text-align: center;
+        }
+    }
+}
