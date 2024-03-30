@@ -43,13 +43,27 @@ header {
         color: white;
     }
 
+    .sea {
+        position: relative;
+
+        .play {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            font-size: 30px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
 
 }
 
 main {
     .main1 {
-
-
         h1 {
             text-align: center;
         }
@@ -58,20 +72,27 @@ main {
             display: grid;
             padding-top: 50px;
 
-
-            .img1 {
-                grid-area: i1;
+            img {
+                height: 375px;
             }
 
-            .img2 {
-                grid-area: i2;
+            .img {
+                position: relative;
+                width: 100%;
+
+                .text {
+                    position: absolute;
+                    bottom: 10px;
+                    left: 10px;
+
+                }
             }
 
-            .img3 {
-                grid-area: i3;
-            }
         }
     }
+
+
+
 
     .main2 {
 
@@ -85,28 +106,24 @@ main {
 
             margin-top: 30px;
 
+            .img {
+                position: relative;
+
+                i {
+                    font-size: 20px;
+                    padding: 5px;
+                    color: white;
+                    background-color: red;
+                    border: 3px solid white;
+                    border-radius: 90%;
+                    position: absolute;
+                    left: 65%;
+                    bottom: 50%;
+                }
+            }
+
             .text {
                 text-align: center;
-            }
-
-            .img1 {
-                grid-area: i1;
-
-            }
-
-            .img2 {
-                grid-area: i2;
-
-            }
-
-            .img3 {
-                grid-area: i3;
-
-            }
-
-            .img4 {
-                grid-area: i4;
-
             }
 
         }
@@ -160,17 +177,9 @@ main {
                 grid-area: i4;
             }
 
-            .img5 {
-                grid-area: i5;
-            }
 
-            .img6 {
-                grid-area: i6;
-            }
 
-            .img7 {
-                grid-area: i7;
-            }
+
         }
     }
 
@@ -232,7 +241,7 @@ main {
                 text-align: center;
             }
 
-            
+
 
 
 
@@ -266,118 +275,173 @@ main {
 
     }
 
-    .main1 {
-        height: 587px;
-        padding-top: 70px;
-        grid-template-columns: repeat(3, 1fr);
+    main {
+        .main1 {
+            height: 587px;
+            padding-top: 70px;
+            grid-template-columns: repeat(3, 1fr);
 
-        .box-img {
-            position: relative;
-            height: 375.38px;
-            width: 1024px;
-            grid-template-areas:
-                "i1 i2 i3";
+            .box-img {
+                width: 80%;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 10px;
+            }
+        }
+
+        .main2 {
+            height: 400px;
+            grid-template-columns: repeat(4, 1fr);
 
             img {
-                height: 375px;
-                width: 320px;
+                width: 122.23px;
+                height: 123.23px;
+                border-radius: 50%;
+                margin-left: 45px;
             }
 
-            .text1 {
-                position: absolute;
-                top: 290px;
-                left: 30px;
-            }
-
-            .text2 {
-                position: absolute;
-                top: 290px;
-                left: 370px;
+            .box-img {
+                height: 240px;
+                grid-template-columns: repeat(4, 1fr);
 
             }
-
-            .text3 {
-                position: absolute;
-                top: 290px;
-                left: 715px;
-            }
-
-        }
-    }
-
-    .main2 {
-        height: 400px;
-        grid-template-columns: repeat(4, 1fr);
-
-        img {
-            width: 122.23px;
-            height: 123.23px;
-            border-radius: 50%;
-            margin-left: 45px;
         }
 
-        .box-img {
-            height: 240px;
-            grid-template-areas:
-                "i1 i2 i3 i4";
-        }
-    }
+        .main3 {
+            grid-template-columns: repeat(3, 1fr);
 
-    .main3 {
-        grid-template-columns: repeat(3, 1fr);
+            .box-img {
+                width: 70%;
+                grid-template-areas:
+                    "i1 i2 i3"
+                    "i4 i5 i5"
+                    "i6 i6 i7"
+                ;
 
-        img {
-            width: 332px;
-            height: 310px;
-        }
+                .img5 {
+                    grid-area: i5;
+                    width: 100%;
 
-        .box-img {
-            width: 1024px;
-            grid-template-areas:
-                "i1 i2 i3"
-                "i4 i5 i5"
-                "i6 i6 i7"
-            ;
-        }
-    }
-
-    .main4 {
-        .main4-1 {
-            .icon {
-                width: 1000px;
-
-            }
-
-        }
-
-        .main4-2 {
-            .text {
-                margin: 40px;
-                display: flex;
-                justify-content: center;
-                input {
-                    height: 40px;
-                    width: 500px;
-                    color: rgb(214, 214, 215);
+                    img {
+                        width: 100%;
+                    }
                 }
 
 
+                .img6 {
+                    grid-area: i6;
+                    width: 100%;
 
-                button {
-                    background-color: white;
-                    margin-left: 10px;
-                    height: 40px;
-                    border: 1px solid aqua;
-                    border-radius: 10px;
-                    color: aquamarine;
+                    img {
+                        width: 100%;
+                        height: 310px;
+                    }
+                }
+
+                .img7 {
+                    grid-area: i7;
+                    height: 310px;
+                    width: 100%;
+                }
+
+
+            }
+        }
+
+        .main4 {
+            .main4-1 {
+                .icon {
+                    width: 1000px;
+
+                }
+
+            }
+
+            .main4-2 {
+                .text {
+                    margin: 40px;
+                    display: flex;
+                    justify-content: center;
+
+                    input {
+                        height: 40px;
+                        width: 500px;
+                        color: rgb(214, 214, 215);
+                    }
+
+
+
+                    button {
+                        background-color: white;
+                        margin-left: 10px;
+                        height: 40px;
+                        border: 1px solid aqua;
+                        border-radius: 10px;
+                        color: aquamarine;
+                    }
                 }
             }
+        }
+
+    }
+
+
+    footer {
+        background-color: rgb(27, 26, 26);
+
+        .logo {
+            padding-top: 60px;
+            margin-left: 300px;
+
+            img {
+                height: 100px;
+                width: 250px;
+
+            }
+        }
+
+        .box-1 {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-around;
+            color: white;
+
+            ul {
+
+                height: 150px;
+
+                li:first-child {
+                    margin-bottom: 20px;
+                }
+
+                li {
+                    padding-bottom: 10px;
+                    list-style: none;
+                }
+            }
+
+        }
+
+        .box-2 {
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            margin: 30px;
+
+
+            padding: 50px 0px;
+
+
+
+
         }
     }
 }
 
 /* screen tablet */
 @media screen and (min-width:741px) and (max-width:1024px) {
+
     header {
         nav {
             .logo {
@@ -396,120 +460,189 @@ main {
         }
     }
 
-    .main1 {
-        grid-template-columns: repeat(3, 1fr);
-        margin-left: 20px;
-        margin-right: 20px;
+    main {
+        .main1 {
+            grid-template-columns: repeat(3, 1fr);
 
-        .box-img {
-            position: relative;
-            width: 100%;
-            gap: 10px;
-            grid-template-areas:
-                "i1 i2 i3";
+            .box-img {
+                gap: 10px;
+                width: 99%;
+                grid-template-columns: repeat(3, 1fr);
 
+                img {
+                    height: 300px;
+                    width: 100%;
+                }
+
+
+            }
+        }
+
+        .main2 {
+            height: 620px;
+
+            h1 {
+
+                width: 400px;
+                padding: 30px;
+            }
+
+            img {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                margin-left: 50px;
+            }
+
+            .box-img {
+                grid-template-areas:
+                    "i1 i2"
+                    "i3 i4";
+                margin-bottom: 30px;
+                gap: 10px;
+            }
+
+
+        }
+
+        .main3 {
             img {
                 height: 300px;
                 width: 230px;
             }
 
-            .text1 {
-                position: absolute;
-                top: 60%;
-                left: 2%;
-            }
+            .box-img {
+                margin-right: 10px;
+                margin-left: 10px;
+                grid-template-areas:
+                    "i1 i2 i3"
+                    "i4 i5 i5"
+                    "i6 i6 i7"
+                ;
 
-            .text2 {
-                position: absolute;
-                top: 60%;
-                left: 36%;
-            }
+                .img5 {
+                    grid-area: i5;
+                    width: 96%;
 
-            .text3 {
-                position: absolute;
-                top: 60%;
-                right: 3%;
-            }
-        }
-    }
-
-    .main2 {
-        height: 620px;
-
-        h1 {
-
-            width: 400px;
-            padding: 30px;
-        }
-
-        img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            margin-left: 50px;
-        }
-
-        .box-img {
-            grid-template-areas:
-                "i1 i2"
-                "i3 i4";
-            margin-bottom: 30px;
-            gap: 10px;
-        }
-
-
-    }
-
-    .main3 {
-        img {
-            height: 300px;
-            width: 230px;
-        }
-
-        .box-img {
-            grid-template-areas:
-                "i1 i2 i3"
-                "i4 i5 i5"
-                "i6 i6 i7"
-            ;
-        }
-    }
-
-    .main4 {
-        .main4-1 {
-            .icon {
-                width: 80%;
-            }
-        }
-
-        .main4-2 {
-            .text {
-                margin: 40px;
-                display: flex;
-                justify-content: center;
-                input {
-                    height: 30px;
-                    width: 500px;
-                    color: rgb(214, 214, 215);
+                    img {
+                        width: 100%;
+                    }
                 }
 
+                .img6 {
+                    grid-area: i6;
+                    width: 96%;
 
+                    img {
+                        width: 100%;
+                    }
+                }
 
-                button {
-                    background-color: white;
-                    margin-left: 10px;
-                    height: 31px;
-                    border: 1px solid aqua;
-                    border-radius: 10px;
-                    color: aquamarine;
+                .img7 {
+                    grid-area: i7;
+
+                    width: 95%;
+
+                    img {
+                        width: 100%;
+                    }
                 }
             }
+        }
+
+        .main4 {
+            .main4-1 {
+                .icon {
+                    width: 80%;
+                }
+            }
+
+            .main4-2 {
+                .text {
+                    margin: 40px;
+                    display: flex;
+                    justify-content: center;
+
+                    input {
+                        height: 30px;
+                        width: 500px;
+                        color: rgb(214, 214, 215);
+                    }
+
+
+
+                    button {
+                        background-color: white;
+                        margin-left: 10px;
+                        height: 31px;
+                        border: 1px solid aqua;
+                        border-radius: 10px;
+                        color: aquamarine;
+                    }
+                }
+            }
+        }
+
+    }
+
+
+    footer {
+        background-color: rgb(27, 26, 26);
+
+        .logo {
+            padding-top: 60px;
+            margin-left: 120px;
+
+            img {
+                height: 70px;
+                width: 150px;
+
+            }
+        }
+
+        .box-1 {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-around;
+            color: white;
+
+            ul {
+
+                height: 150px;
+
+                li:first-child {
+                    margin-bottom: 20px;
+                }
+
+                li {
+                    padding-bottom: 10px;
+                    list-style: none;
+                }
+            }
+
+        }
+
+        .box-2 {
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            margin: 30px;
+
+
+            padding: 50px 0px;
+
+
+
+
         }
     }
 }
 
 /* screen mobile */
 @media screen and (max-width:741px) {
+
     header {
         .sea {
             width: 80%;
@@ -519,125 +652,171 @@ main {
         }
     }
 
-    .main1 {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        grid-template-columns: repeat(1, 1fr);
+    main {
+        .main1 {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            grid-template-columns: repeat(1, 1fr);
 
-        .box-img {
-            position: relative;
-            width: 100%;
-            gap: 10px;
+            .box-img {
+                grid-template-columns: repeat(1, 1fr);
+                position: relative;
+                width: 100%;
+                gap: 10px;
 
-            grid-template-areas:
-                "i1"
-                "i2"
-                "i3"
-            ;
+                .img {
+                    padding: 0px 5px 0px 5px;
+                }
 
-            img {
-                height: 300px;
-                width: 300px;
-            }
 
-            .text1 {
-                position: absolute;
-                top: 22%;
-                left: 40px;
-            }
 
-            .text2 {
-                position: absolute;
-                top: 53.5%;
-                left: 40px;
-            }
-
-            .text3 {
-                position: absolute;
-                top: 85%;
-                left: 40px;
-            }
-        }
-
-    }
-
-    .main2 {
-        .box-img {
-            gap: 10px;
-            grid-template-areas:
-                "i1"
-                "i2"
-                "i3"
-                "i4";
-
-            img {
-                height: 100px;
-                width: 100px;
-                border-radius: 90%;
-                margin-left: 50px;
-            }
-
-        }
-
-        h4 {
-            margin-top: 30px;
-            margin-bottom: 30px;
-        }
-
-    }
-
-    .main3 {
-        padding-bottom: 40px;
-
-        .box-img {
-            grid-template-areas:
-                "i1"
-                "i2"
-                "i3"
-                "i4"
-                "i5"
-                "i6"
-                "i7"
-            ;
-
-            img {
-                height: 200px;
-                width: 300px;
-
-            }
-        }
-
-    }
-
-    .main4 {
-        margin-left: 10px;
-        margin-right: 10px;
-
-        .main4-2 {
-           
-            .text {
-               margin-top: 30px;
-               margin-bottom: 20px;
-               
-                input {
-                    height: 30px;
+                img {
+                    height: 300px;
                     width: 100%;
-                    color: rgb(214, 214, 215);
+                }
+
+
+            }
+
+        }
+
+        .main2 {
+            .box-img {
+                gap: 10px;
+
+
+                img {
+                    height: 100px;
+                    width: 100px;
+                    border-radius: 90%;
+                    margin-left: 50px;
+                }
+
+            }
+
+            h4 {
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+
+        }
+
+        .main3 {
+            padding-bottom: 40px;
+
+            .box-img {
+                grid-template-areas:
+                    "i1"
+                    "i2"
+                    "i3"
+                    "i4"
+                    "i5"
+                    "i6"
+                    "i7"
+                ;
+
+
+                img {
+                    height: 200px;
+                    width: 300px;
+
+                }
+
+            }
+
+        }
+
+        .main4 {
+            margin-left: 10px;
+            margin-right: 10px;
+
+            .main4-2 {
+
+                .text {
+                    margin-top: 40px;
+                    margin-bottom: 20px;
+
+                    input {
+                        height: 30px;
+                        width: 100%;
+                        color: rgb(214, 214, 215);
+                        margin-bottom: 10px;
+                    }
+
+
+
+                    button {
+                        background-color: white;
+                        width: 100%;
+                        height: 40px;
+                        border: 1px solid aqua;
+                        border-radius: 10px;
+                        color: aquamarine;
+                    }
+                }
+            }
+        }
+
+    }
+
+    footer {
+        background-color: rgb(27, 26, 26);
+
+        .logo {
+            padding-top: 20px;
+            margin-left: 40px;
+
+            img {
+                height: 40px;
+                width: 100px;
+
+            }
+        }
+
+        .box-1 {
+           
+          
+            margin-top: 50px;
+           width: 100%;
+            display: flex;
+            justify-content: space-around;
+            color: white;
+            .box1{
+                width: 20%;
+            }
+            .box2{
+                width: 20%;
+            }
+            .box3{
+                width: 20%;
+            }
+            .box4{
+                width: 20%;
+            }
+
+            ul {
+                height: 170px;
+
+                li:first-child {
                     margin-bottom: 20px;
                 }
 
-
-
-                button {
-                    background-color: white;
-                   width: 100%;
-                    height: 40px;
-                    border: 1px solid aqua;
-                    border-radius: 10px;
-                    color: aquamarine;
+                li {
+                    padding-bottom: 10px;
+                    list-style: none;
                 }
             }
+
+
+        }
+
+        .box-2 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            margin: 30px;
+            padding: 50px 0px;
         }
     }
 }
-
