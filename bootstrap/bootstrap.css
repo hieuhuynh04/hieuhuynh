@@ -17,6 +17,10 @@ header {
     .ul-center {
         justify-content: center;
         width: 100%;
+        .home{
+            color: rgb(1, 93, 1);
+            /* font-weight: bold; */
+        }
     }
     .ul-icon {
          color: green;
@@ -42,6 +46,28 @@ header {
                 left: 10px;
                 top: -7px;
             }
+        }
+    }
+}
+
+@media screen and (min-width:741px) and (max-width:1024px) {
+    .ul-icon {
+        flex-direction: row;
+        justify-content: space-between;
+
+        .cart {
+            order: -1;
+        }
+    }
+    
+}
+@media screen and (max-width: 741px) {
+    .ul-icon {
+        flex-direction: row;
+        justify-content: space-between;
+
+        .cart {
+            order: -1;
         }
     }
 }
