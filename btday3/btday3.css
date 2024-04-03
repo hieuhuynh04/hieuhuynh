@@ -434,10 +434,11 @@ main {
                 }
             }
         }
+    }
 
     }
 
-
+        
     footer {
         background-color: rgb(27, 26, 26);
 
@@ -490,7 +491,7 @@ main {
 
         }
     }
-}
+    }}
 
 /* screen tablet */
 @media screen and (min-width:741px) and (max-width:1024px) {
